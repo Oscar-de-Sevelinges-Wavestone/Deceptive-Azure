@@ -2,7 +2,7 @@
 
 # Création du script az-logger.sh
 echo "#!/bin/bash" >> /etc/az-logger.sh
-echo "commande="$*" >> /etc/az-logger.sh
+echo "commande="$*"" >> /etc/az-logger.sh
 echo "output=$(az "$@" 2>&1)" >> /etc/az-logger.sh
 echo "if [[ $output == *"Code: AuthorizationFailed"*  ]]; then" >> /etc/az-logger.sh
 echo "        echo "$commande" | logger -t az" >> /etc/az-logger.sh
