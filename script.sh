@@ -14,3 +14,6 @@ chmod +x /etc/az-logger.sh
 # Modification du fichier /etc/bash.bashrc
 echo "alias az="/etc/az-logger.sh"" >> /etc/bash.bashrc
 source /etc/bash.bashrc
+
+# Installation du CLI Azure sur la VM
+curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
