@@ -19,11 +19,11 @@
 curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
 
 # Création du script ssh-logger.sh
-echo "#!/bin/bash" >> /etc/ssh-logger.sh
-echo "commande=\"\$*\"" >> /etc/ssh-logger.sh
-echo "echo \"\$commande\" | logger -t ssh" >> /etc/ssh-logger.sh
-chmod +x /etc/ssh-logger.sh
+# echo "#!/bin/bash" >> /etc/ssh-logger.sh
+# echo "commande=\"\$*\"" >> /etc/ssh-logger.sh
+# echo "echo \"\$commande\" | logger -t ssh" >> /etc/ssh-logger.sh
+# chmod +x /etc/ssh-logger.sh
 
 # Modification du fichier /etc/bash.bashrc
-echo "alias ssh=\"/etc/ssh-logger.sh\"" >> /etc/bash.bashrc
-source /etc/bash.bashrc
+# echo "alias ssh=\"/etc/ssh-logger.sh\"" >> /etc/bash.bashrc
+# source /etc/bash.bashrc
